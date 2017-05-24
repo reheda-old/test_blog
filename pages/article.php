@@ -1,5 +1,5 @@
 <?php 
-  require 'includes/config.php';
+  require '../includes/config.php';
  ?>
 
 
@@ -23,7 +23,7 @@
   <div id="wrapper">
   
   <!-- header -->
-    <?php include 'includes/header.php'; ?>
+    <?php include '../includes/header.php'; ?>
     
 
 
@@ -64,7 +64,7 @@
                   </div>
                 </div>
 
-                <?php include 'includes/add-comment.php'; ?>
+                <?php include '../includes/add-comment.php'; ?>
 
                 <?php 
               }
@@ -72,14 +72,14 @@
 
           </section>
           <section class="content__right col-md-4">
-            <?php include 'includes/sidebar.php' ?>
+            <?php include '../includes/sidebar.php' ?>
           </section>
         </div>
       </div>
     </div>
 
     <!-- footer -->
-    <?php include 'includes/footer.php' ?>
+    <?php include '../includes/footer.php' ?>
 
   </div>
 

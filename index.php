@@ -29,7 +29,7 @@
         <div class="row">
           <section class="content__left col-md-8">
             <div class="block">
-              <a href="/articles.php">Все записи</a>
+              <a href="/pages/articles.php">Все записи</a>
               <h3>Новейшее_в_блоге</h3>
               <div class="block__content">
                 <div class="articles articles__horizontal">
@@ -43,7 +43,7 @@
                         <article class="article">
                           <div class="article__image" style="background-image: url(/static/images/<?php echo $art['image']; ?>);"></div>
                           <div class="article__info">
-                            <a href="/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
+                            <a href="/pages/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
                             <div class="article__info__meta">
 
                             <?php 
@@ -56,7 +56,7 @@
                                 }
                               }
                             ?>
-                              <small>Категория: <a href="/articles.php?category=<?php echo $art_cat['id'] ?>"><?php echo $art_cat['title'] ?></a></small>
+                              <small>Категория: <a href="/pages/articles.php?category=<?php echo $art_cat['id'] ?>"><?php echo $art_cat['title'] ?></a></small>
                             </div>
                             <div class="article__info__preview"><?php echo mb_substr(strip_tags($art['text']), 0, 100, 'utf-8') . ' ...'?></div>
                           </div>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="block">
-              <a href="/articles.php?category=6">Все записи</a>
+              <a href="/pages/articles.php?category=6">Все записи</a>
               <h3>Безопасность [Новейшее]</h3>
               <div class="block__content">
                 <div class="articles articles__horizontal">
@@ -86,7 +86,7 @@
                         <article class="article">
                           <div class="article__image" style="background-image: url(/static/images/<?php echo $art['image']; ?>);"></div>
                           <div class="article__info">
-                            <a href="/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
+                            <a href="/pages/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
                             <div class="article__info__meta">
 
                             <?php 
@@ -99,7 +99,7 @@
                                 }
                               }
                             ?>
-                              <small>Категория: <a href="/articles.php?category=<?php echo $art_cat['id'] ?>"><?php echo $art_cat['title'] ?></a></small>
+                              <small>Категория: <a href="/pages/articles.php?category=<?php echo $art_cat['id'] ?>"><?php echo $art_cat['title'] ?></a></small>
                             </div>
                             <div class="article__info__preview"><?php echo mb_substr(strip_tags($art['text']), 0, 100, 'utf-8') . ' ...'?></div>
                           </div>
@@ -115,7 +115,7 @@
             </div>
 
             <div class="block">
-              <a href="/articles.php?category=4">Все записи</a>
+              <a href="/pages/articles.php?category=4">Все записи</a>
               <h3>Программирование [Новейшее]</h3>
               <div class="block__content">
                 <div class="articles articles__horizontal">
@@ -128,7 +128,7 @@
                         <article class="article">
                           <div class="article__image" style="background-image: url(/static/images/<?php echo $art['image']; ?>);"></div>
                           <div class="article__info">
-                            <a href="/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
+                            <a href="/pages/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
                             <div class="article__info__meta">
 
                             <?php 
@@ -141,7 +141,7 @@
                                 }
                               }
                             ?>
-                              <small>Категория: <a href="/articles.php?category=<?php echo $art_cat['id'] ?>"><?php echo $art_cat['title'] ?></a></small>
+                              <small>Категория: <a href="/pages/articles.php?category=<?php echo $art_cat['id'] ?>"><?php echo $art_cat['title'] ?></a></small>
                             </div>
                             <div class="article__info__preview"><?php echo mb_substr(strip_tags($art['text']), 0, 100, 'utf-8') . ' ...'?></div>
                           </div>

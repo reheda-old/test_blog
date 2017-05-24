@@ -16,7 +16,7 @@
             <article class="article">
               <div class="article__image" style="background-image: url(https://www.gravatar.com/avatar/<?php echo md5($comment['email']); ?>?s=125)"></div>
               <div class="article__info">
-                <a href="/article.php?id=<?php echo $comment['articles_id']; ?>"><?php echo $comment['nickname'] ?></a>
+                <a href="/pages/article.php?id=<?php echo $comment['articles_id']; ?>"><?php echo $comment['nickname'] ?></a>
                 <div class="article__info__meta"></div>
                 <div class="article__info__preview"><?php echo $comment['text']; ?></div>
               </div>
@@ -33,7 +33,7 @@
 <div class="block" id="comment-add-form">
   <h3>Добавить комментарий</h3>
   <div class="block__content">
-    <form class="form" method="POST" action="/article.php?id=<?php echo $art['id'] ?>#comment-add-form">
+    <form class="form" method="POST" action="/pages/article.php?id=<?php echo $art['id'] ?>#comment-add-form">
       <?php 
         if (isset($_POST['do_post'])){
           $errors = array();

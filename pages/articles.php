@@ -1,5 +1,5 @@
 <?php 
-  require 'includes/config.php';
+  require '../includes/config.php';
  ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
   <div id="wrapper">
   
     <!-- header -->
-    <?php include 'includes/header.php' ?>
+    <?php include '../includes/header.php' ?>
 
     <div id="content">
       <div class="container">
@@ -83,7 +83,7 @@
                         <article class="article">
                           <div class="article__image" style="background-image: url(/static/images/<?php echo $art['image']; ?>);"></div>
                           <div class="article__info">
-                            <a href="/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
+                            <a href="/pages/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
                             <div class="article__info__meta">
 
                               <?php 
@@ -97,7 +97,7 @@
                                 }
                               ?>
 
-                              <small>Категория: <a href="/articles.php?category=<?php echo $art_cat['id'] ?>"><?php echo $art_cat['title'] ?></a></small>
+                              <small>Категория: <a href="/pages/articles.php?category=<?php echo $art_cat['id'] ?>"><?php echo $art_cat['title'] ?></a></small>
                             </div>
                             <div class="article__info__preview"><?php echo mb_substr(strip_tags($art['text']), 0, 100, 'utf-8') . ' ...'?></div>
                           </div>
@@ -115,11 +115,11 @@
                   if ($articles_exists){
                     echo '<div class="paginator">';
                     if ($page > 1){
-                      echo '<a href="/articles.php?page='.($page-1).'&category='.$category.'">&laquo; Предыдущая </a>';
+                      echo '<a href="/pages/articles.php?page='.($page-1).'&category='.$category.'">&laquo; Предыдущая </a>';
                     }
 
                     if ($page < $total_pages) {
-                      echo '<a href="/articles.php?page='.($page+1).'&category='.$category.'"> Следующая &raquo;</a>';
+                      echo '<a href="/pages/articles.php?page='.($page+1).'&category='.$category.'"> Следующая &raquo;</a>';
                     }
                     echo '</div>';
                   } ?>
@@ -129,14 +129,14 @@
 
           </section>
           <section class="content__right col-md-4">
-            <?php include 'includes/sidebar.php' ?>
+            <?php include '../includes/sidebar.php' ?>
           </section>
         </div>
       </div>
     </div>
     
     <!-- footer -->
-    <?php include 'includes/footer.php' ?>
+    <?php include '../includes/footer.php' ?>
 
   </div>
 

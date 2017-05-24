@@ -30,7 +30,7 @@
 
             foreach($categories as $cat){
               ?>
-                <li><a href="/articles.php?category=<?php echo $cat['id']; ?>"><?php echo $cat['title']; ?></a></li>
+                <li><a href="/pages/articles.php?category=<?php echo $cat['id']; ?>"><?php echo $cat['title']; ?></a></li>
               <?php  
             }
           ?>
