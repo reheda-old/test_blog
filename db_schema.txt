@@ -1,0 +1,19 @@
+- test_db
+	- articles
+		- id
+		- title
+		- text
+		- articles_categories_id
+		- pubdate
+		- views
+
+	- articles_categories
+		- id
+		- name
+
+	- comments
+		- id
+		- author
+		- text
+		- pubdate
+		- articles_id
